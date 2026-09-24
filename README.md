@@ -175,18 +175,15 @@ The notebook produces the following charts (saved to `figures/`):
 
 ---
 
-## Author
+##Conclusions
 
-**Minal**  
-*Date:* `[date of completion]`  
-*Course / Institution:* `[course name / institution]`
+## Conclusion
+
+This project analyzed a synthetic Netflix-style customer dataset to understand churn patterns, customer engagement, and retention opportunities. The analysis found that low average watch time, longer time since last login, subscription plan, and payment method were key indicators of churn risk.
+
+A tuned Random Forest model outperformed the Logistic Regression baseline, achieving strong predictive performance. Customer segmentation also identified high-risk groups that can be targeted with personalised re-engagement campaigns, payment-support interventions, plan-upgrade offers, and content recommendations.
+
+Because the dataset is synthetic, these findings are intended for academic use. In a real-world setting, the model should be validated on current customer data and monitored for fairness, privacy, and changing customer behaviour.
 
 ---
 
-## Report
-
-The written project report is available as:  
-`MINAL_NetflixCustomerChurnEngagementAnalytics_ProjectReport.docx`
-
-It covers: abstract, introduction, dataset description, data cleaning, EDA findings,
-KPI summary, segmentation, model evaluation, insights, limitations, and references.
