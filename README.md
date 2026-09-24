@@ -130,7 +130,7 @@ jupyter notebook
 ## Models & Results
 
 | Model | Accuracy | Recall | ROC-AUC (Test) | ROC-AUC (CV Mean) |
-|---|---|---|---|
+|---|---|---|---|---|
 | Logistic Regression (Baseline) | 0.8870	| 0.9046 | 0.9658 | 0.9662 |
 | Random Forest (GridSearchCV Tuned) | 0.9850 | 0.9821 |	0.9981 |	0.9971 |
 
