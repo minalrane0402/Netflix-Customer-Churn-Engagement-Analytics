@@ -167,7 +167,7 @@ The notebook produces the following charts (saved to `figures/`):
 
 ## Limitations
 
-- Dataset is public/synthetic — findings may not reflect real Netflix customer behaviour.
+- Dataset is public/synthetic - findings may not reflect real Netflix customer behaviour.
 - Churn is modelled as a static binary label; no temporal/survival analysis is performed.
 - All associations are correlational, not causal.
 - GridSearchCV covers a controlled parameter grid; wider searches may improve performance.
