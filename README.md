@@ -118,10 +118,9 @@ jupyter notebook
 ## Key Findings
 
 > ℹ️ This section is populated after running the notebook on the actual dataset.
-> The values below are placeholders — replace with your computed results.
 
-- **Overall churn rate:** `[computed at runtime]`
-- **Best model:** Random Forest (GridSearchCV Tuned) — Test ROC-AUC: `[computed at runtime]`
+- **Overall churn rate:** 50.30%
+- **Best model:** Random Forest (GridSearchCV Tuned) — Test ROC-AUC: 0.9981
 - **Top churn drivers:** Days since last active, watch time, subscription tenure, payment failures, plan type
 - **Highest-risk segment:** Dormant High-Churn Risk cluster
 - **5 retention actions** targeting inactivity, payment friction, plan upgrades, loyalty rewards, and support escalation
@@ -130,14 +129,11 @@ jupyter notebook
 
 ## Models & Results
 
-| Model | Accuracy | ROC-AUC (Test) | ROC-AUC (CV Mean) |
+| Model | Accuracy | Recall | ROC-AUC (Test) | ROC-AUC (CV Mean) |
 |---|---|---|---|
-| Logistic Regression (Baseline) | `[runtime]` | `[runtime]` | `[runtime]` |
-| Random Forest (GridSearchCV Tuned) | `[runtime]` | `[runtime]` | `[runtime]` |
+| Logistic Regression (Baseline) | 0.8870	| 0.9046 | 0.9658 | 0.9662 |
+| Random Forest (GridSearchCV Tuned) | 0.9850 | 0.9821 |	0.9981 |	0.9971 |
 
-> Replace the above with actual values from the Model Comparison Table in Section 7 of the notebook.
-
----
 
 ## Visualisations
 
@@ -170,7 +166,6 @@ The notebook produces the following charts (saved to `figures/`):
 - Dataset is public/synthetic — findings may not reflect real Netflix customer behaviour.
 - Churn is modelled as a static binary label; no temporal/survival analysis is performed.
 - All associations are correlational, not causal.
-- Model fairness across demographic subgroups has not been formally audited.
 - GridSearchCV covers a controlled parameter grid; wider searches may improve performance.
 
 ---
