@@ -170,7 +170,6 @@ The notebook produces the following charts (saved to `figures/`):
 
 ---
 
-##Conclusions
 
 ## Conclusion
 
