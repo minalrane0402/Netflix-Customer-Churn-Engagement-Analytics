@@ -38,7 +38,8 @@ reporting, customer segmentation (K-Means), and two classification models
 | **Expected filename** | `netflix_customer_churn.csv` |
 | **Location** | Place inside the `data/` folder (see setup below) |
 
-> The dataset is **not included** in this repository. You must download it from Kaggle.
+> The dataset is **not included** in this repository. You must download it from Kaggle and place it in the data/ folder before running the notebook.
+
 
 ---
 
@@ -67,22 +68,25 @@ netflix-churn-analytics/
 ### Steps
 
 ```bash
-# 1. Clone or download this repository
-cd netflix-churn-analytics
+# Clone the repository
+git clone https://github.com/minalrane0402/etflix-Customer-Churn-Engagement-Analytics.git
+cd etflix-Customer-Churn-Engagement-Analytics
 
-# 2. (Recommended) Create a virtual environment
+# Create folders if they are not already present
+mkdir data
+mkdir figures
+
+# Create and activate a virtual environment
 python -m venv venv
-source venv/bin/activate        # macOS / Linux
-# venv\Scripts\activate         # Windows
 
-# 3. Install dependencies
+# macOS/Linux
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
-
-# 4. Download the dataset from Kaggle and place it at:
-#    data/netflix_customer_churn.csv
-
-# 5. Launch Jupyter Notebook
-jupyter notebook
 ```
 
 ---
